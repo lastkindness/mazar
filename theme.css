@@ -1,0 +1,10 @@
+/* =WordPress Core
+-------------------------------------------------------------- */
+
+.ajax-add-card{
+	cursor: pointer;
+}
+
+.ajax-add-card .d-66-icon-wrapper{
+	display: none;
+}

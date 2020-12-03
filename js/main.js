@@ -1,4 +1,4 @@
-(function () {
+(function ($) {
 
     "use strict";
     //body onclick start
@@ -25,9 +25,9 @@
         }
     });
 
-    $('.js__dropdown a').on('click', function (e) {
+    /*$('.js__dropdown a').on('click', function (e) {
         e.preventDefault();
-    });
+    });*/
     //dropdown select end
 
     /*CustomInputNumber start*/
@@ -646,4 +646,4 @@
     }
     //select2 click
 
-})();
+})(jQuery);
