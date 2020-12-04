@@ -36,14 +36,32 @@
 			$custom_body_class = '' ;
 		}
 
+		if( count(WC()->cart->get_cart()) > 0 ){
+
+			$count_circle_style = 'display:block' ;
+			$modal_available = '' ;
+			$cart_link = 'href="' . wc_get_cart_url() . '"' ;
+
+		}else{
+
+			$count_circle_style = 'display:none' ;
+			$modal_available = 'commerce-cart-open-link' ;
+			$cart_link = '' ;
+
+		}
+
 	?>
 
 	<body <?php body_class($custom_body_class); ?>>
 		<header data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
 		    <div data-node-type="commerce-cart-wrapper" class="w-commerce-commercecartwrapper cart" data-wf-page-link-href-prefix="" data-wf-cart-duration="250" data-wf-cart-type="modal" data-open-product="" data-wf-cart-query="" udesly-shopify-el="mini-cart">
-		        <a href="#" data-node-type="commerce-cart-open-link" class="w-commerce-commercecartopenlink cart-button w-inline-block">
-		            <div style="display:none" data-count-hide-rule="always" class="w-commerce-commercecartopenlinkcount cart-quantity" udesly-shopify-el="cart-count">0</div>
+
+		        <a <?php echo $cart_link ; ?> data-node-type="<?php echo $modal_available ; ?>" class="w-commerce-commercecartopenlink cart-button w-inline-block">
+
+		            <div style="<?php echo $count_circle_style ; ?>" data-count-hide-rule="always" class="w-commerce-commercecartopenlinkcount cart-quantity" udesly-shopify-el="cart-count"><?php echo count(WC()->cart->get_cart()) ; ?></div>
+
 		        </a>
+
 		        <div data-node-type="commerce-cart-container-wrapper" style="display:none" class="w-commerce-commercecartcontainerwrapper w-commerce-commercecartcontainerwrapper--cartType-modal cart-wrapper">
 		            <div data-node-type="commerce-cart-container" class="w-commerce-commercecartcontainer cart-container">
 		                <div class="w-commerce-commercecartheader">

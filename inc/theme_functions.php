@@ -119,3 +119,22 @@ die;
 
 add_action('wp_ajax_changeprice', 'change_product_price');
 add_action('wp_ajax_nopriv_changeprice', 'change_product_price');
+
+function change_cart_number(){
+
+    check_ajax_referer('check_nonce', 'security') ;
+
+    $count_product = count(WC()->cart->get_cart()) ;
+
+    $cart_link = wc_get_cart_url() ;
+
+    $dataCart = array( 'number' => $count_product, 'link' => $cart_link ) ;
+
+	echo json_encode( $dataCart ) ;
+
+die;
+
+}
+
+add_action('wp_ajax_cartnumber', 'change_cart_number');
+add_action('wp_ajax_nopriv_cartnumber', 'change_cart_number');

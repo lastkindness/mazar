@@ -102,7 +102,34 @@
 			data: productData,
 			type: 'POST',
 			success: function(data) {
-				if (data) { console.log('Added to cart') ; }
+				if (data) { 
+					console.log('Added to cart') ; 
+					cart_product_number() ;
+				}
+			}
+		});
+
+	}
+
+	function cart_product_number(){
+
+		var cartData = {
+			'action' : 'cartnumber',
+			'security': filter_params.ajax_nonce,
+		}
+
+		$.ajax({
+			url: filter_params.ajaxurl,
+			data: cartData,
+			type: 'POST',
+			success: function(data) {
+				if (data) { 
+					var dataArray = JSON.parse( data ) ;
+					$('.w-commerce-commercecartopenlink').attr( "href", dataArray['link'] ) ;
+					$('.w-commerce-commercecartcontainerwrapper--cartType-modal').remove() ;
+					$('.w-commerce-commercecartopenlink .cart-quantity').css('display','block') ;
+					$('.w-commerce-commercecartopenlink .cart-quantity').text(dataArray['number']) ;
+				}
 			}
 		});
 
