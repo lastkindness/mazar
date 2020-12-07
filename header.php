@@ -31,6 +31,8 @@
 			$custom_body_class = 'contact-page' ;
 		}elseif( basename( get_page_template() ) == 'template-story.php' ) {
 			$custom_body_class = 'story-page' ;
+		}elseif( basename( get_page_template() ) == 'template-partners.php' ) {
+			$custom_body_class = 'partners-page' ;
 		}
 		else{
 			$custom_body_class = '' ;

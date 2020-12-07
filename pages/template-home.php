@@ -152,7 +152,7 @@ get_header(); ?>
 
 					                <?php if( get_the_post_thumbnail_url( $product, 'full' ) ) : ?>
    
-					                    <img width="<?php echo $block_img_width ; ?>" height="auto" src="<?php echo get_the_post_thumbnail_url( $product, 'full' ) ; ?>" alt="cbd oil for anxiety by Headery" srcset="<?php echo get_the_post_thumbnail_url( $product, 'full' ) ; ?> 500w, <?php echo get_the_post_thumbnail_url( $product, 'full' ) ; ?> 800w, <?php echo get_the_post_thumbnail_url( $product, 'full' ) ; ?> 885w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 100vw, (max-width: 991px) 800px, 81vw" data-w-id="5e51f98e-66bd-3876-c8da-cfbc510019d7" class="cord image2">
+					                    <img width="<?php echo $block_img_width ; ?>" data-image-id="<?php echo $product ; ?>" height="auto" src="<?php echo get_the_post_thumbnail_url( $product, 'full' ) ; ?>" alt="cbd oil for anxiety by Headery" class="cord image2 product-image">
 
 					                <?php endif ; ?>
 

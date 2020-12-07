@@ -10,6 +10,7 @@
 		let productId = $productItem.find('.ajax-add-card').attr('data-product-id') ;
 
 		ajax_change_price( capacity, taste, quantity, productId ) ;
+		ajax_change_product_image( capacity, taste, productId ) ;
 
 		$productItem.find('.ajax-add-card').on('click', function(){
 
@@ -33,6 +34,7 @@
 			let productId = $productItem.find('.ajax-add-card').attr('data-product-id') ;
 
 			ajax_change_price( capacity, taste, quantity, productId ) ;
+			ajax_change_product_image( capacity, taste, productId ) ;
 
 		})
 
@@ -55,6 +57,7 @@
 			let productId = $productItem.find('.ajax-add-card').attr('data-product-id') ;
 
 			ajax_change_price( capacity, taste, quantity, productId ) ;
+			ajax_change_product_image( capacity, taste, productId ) ;
 
 		})
 		
@@ -79,6 +82,31 @@
 				if (data) {
 
 					$('.product-holder .block-buy .price[data-price-id='+productId+']').html(data) ;
+
+				}
+			}
+		});
+
+	}
+
+	function ajax_change_product_image( capacity, taste, productId ){
+
+		var imageData = {
+			'action' : 'changeimage',
+			'security': filter_params.ajax_nonce,
+			'capacity' : capacity,
+			'taste' : taste,
+			'productId' : productId
+		}
+
+		$.ajax({
+			url: filter_params.ajaxurl,
+			data: imageData,
+			type: 'POST',
+			success: function(data) {
+				if (data) {
+
+					$('.product-holder .product-image[data-image-id='+productId+']').attr("src", data) ;
 
 				}
 			}

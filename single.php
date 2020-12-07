@@ -1,10 +1,18 @@
 <?php get_header(); ?>
-	<div id="content">
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'blocks/content', get_post_type() ); ?>
-			<?php comments_template(); ?>
-			<?php get_template_part( 'blocks/pager-single', get_post_type() ); ?>
-		<?php endwhile; ?>
-	</div>
-	<?php get_sidebar(); ?>
+	
+	<?php while ( have_posts() ) : the_post(); ?>
+
+		<div class="section-14">
+		    <div class="div-block-141">
+		        <h2><?php echo get_the_title() ; ?></h2>
+
+		        <div class="rich-text-block-4 w-richtext">
+		            <?php the_content() ; ?>
+		        </div>
+			    
+		    </div>
+		</div>
+		
+	<?php endwhile; ?>
+
 <?php get_footer(); ?>

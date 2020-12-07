@@ -17,6 +17,15 @@ add_action('init', function() {
   pll_register_string('prime-close', 'close');
   pll_register_string('prime-quantity', 'quantity');
   pll_register_string('prime-add-cart', 'Add to cart');
+  pll_register_string('prime-blog-title', 'Wellness');
+  pll_register_string('prime-read-more', 'Read More');
+  pll_register_string('prime-prev-page', 'Previous Page');
+  pll_register_string('prime-next-page', 'Next Page');
+  pll_register_string('prime-formulas', 'Formulas');
+  pll_register_string('prime-bottle-size', 'Bottle Size');
+  pll_register_string('prime-total-cbd', 'Total CBD');
+  pll_register_string('prime-potency', 'Potency');
+  pll_register_string('prime-specs', 'Specs');
 });
 
 if( function_exists('acf_add_options_page') && current_user_can( 'theme_options_view' ) ) {
@@ -138,3 +147,42 @@ die;
 
 add_action('wp_ajax_cartnumber', 'change_cart_number');
 add_action('wp_ajax_nopriv_cartnumber', 'change_cart_number');
+
+function change_product_image(){
+
+    check_ajax_referer('check_nonce', 'security') ;
+
+    if ( isset( $_POST['capacity'] ) && isset( $_POST['taste'] ) && isset( $_POST['productId'] ) ){
+
+    	$product_id = $_POST['productId'] ;
+
+		$match_attributes =  array(
+		    "attribute_pa_capacity" => $_POST['capacity'],
+		    "attribute_pa_flavour" => $_POST['taste']
+		);
+
+		$data_store   = WC_Data_Store::load( 'product' );
+		$variation_id = $data_store->find_matching_product_variation(
+		  new \WC_Product( $product_id),$match_attributes
+		);
+
+		$variation = wc_get_product($variation_id) ;
+		$variation_img_url = wp_get_attachment_image_url( $variation->image_id, 'full' ) ;
+		
+		echo $variation_img_url ;
+
+    }
+
+die;
+
+}
+
+add_action('wp_ajax_changeimage', 'change_product_image');
+add_action('wp_ajax_nopriv_changeimage', 'change_product_image');
+
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+function posts_link_attributes() {
+  return 'class="submit-button-next-3 w-button"';
+}
