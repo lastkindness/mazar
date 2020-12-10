@@ -163,4 +163,95 @@
 
 	}
 
+	$('.btn--load-photo').on('click',function(){
+
+		$('.image-file-input').trigger( "click" );
+
+	})
+
+	$('.image-file-input').change(function(e){
+
+		readImg(this);
+
+	});
+
+	function readImg(input){
+		if (input.files && input.files[0]) {
+	        var reader = new FileReader();
+
+	        reader.onload = function (e) {
+	            $('.render-img').css('background-image', 'url(' + e.target.result + ')');
+	            $('.popup-content .photo').css('display', 'block');
+	        }
+
+	        reader.readAsDataURL(input.files[0]);
+	    }
+	}
+
+	$('.btn-feedback').on('click', function(){
+
+		let name = $('.popup-content #name-review').val() ;
+		let score = $('.popup-content input[name=rating3]:checked').val() ;
+		let text = $('.popup-content #text-review').val() ;
+		let prodId = $('.product-holder').attr('data-prod-id') ;
+
+		let nameValid = false, scoreValid = false, textValid = false ;
+
+		if( score == 0 ){
+			$('.popup-content .rating-group').addClass('feedback-err-star') ;
+		}else{
+			$('.popup-content .rating-group').removeClass('feedback-err-star') ;
+			scoreValid = true ;
+		}
+
+		if( name == '' ){
+			$('.popup-content #name-review').addClass('feedback-err') ;
+		}else{
+			$('.popup-content #name-review').removeClass('feedback-err') ;
+			nameValid = true ;
+		}
+
+		if( text == '' ){
+			$('.popup-content #text-review').addClass('feedback-err') ;
+		}else{
+			$('.popup-content #text-review').removeClass('feedback-err') ;
+			textValid = true ;
+		}
+
+		if( scoreValid && nameValid && textValid ){
+
+			var fd = new FormData(document.getElementById("feedback-form"));
+
+    		fd.append( "action", 'setreview'); 
+    		fd.append( "security", filter_params.ajax_nonce); 
+    		fd.append( "name", name); 
+    		fd.append( "score", score); 
+    		fd.append( "text", text); 
+    		fd.append( "prod_id", prodId); 
+			fd.append( "main_image", $('.image-file-input')[0].files[0]);
+
+			$.ajax({
+				url: filter_params.ajaxurl,
+				type: 'POST',
+				data: fd,
+				success: function(data) {
+					if (data) { 
+						
+						console.log( data ) ;
+
+						$('.review-success-hide').hide() ;
+						$('.form-review--success').show() ;
+
+					}
+				},
+				contentType : false,
+				processData: false
+			});
+
+		}
+
+
+
+	});
+
 })(jQuery);

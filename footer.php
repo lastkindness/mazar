@@ -185,6 +185,59 @@
 
 		<?php endif ; ?>
 
+		<div data-target="popup-review" class="popup">
+	        <form class="popup-content js_validate" enctype="multipart/form-data" id="feedback-form">
+	            <div class="popup-header">
+	                <h4 class="title"><?php pll_e('Leave feedback'); ?></h4>
+	            </div>
+  
+	            <div class="input-container review-success-hide">
+	            	<div class="photo">
+                        <div class="render-img"></div>
+                    </div>
+                    <div class="btn btn--load-photo"><span><?php pll_e('Add Photo'); ?></span></div>
+	            	<input type="file" name="profilepicture" style="display: none" accept=".jpg,.jpeg,.png,.svg" class="image-file-input">
+	            </div>
+	            <div class="input-container review-success-hide">
+	                <label for="name-review" class="req"><?php pll_e('Name'); ?></label>
+	                <input type="text" name="name" id="name-review" class="validate">
+	            </div>
+	            <div id="full-stars-example-two" class="review-success-hide">
+	                <label><?php pll_e('Your Score'); ?></label>
+	                <div class="rating-group">
+	                    <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating3-none" value="0" type="radio">
+	                    <label aria-label="1 star" class="rating__label" for="rating3-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+	                    <input class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
+	                    <label aria-label="2 stars" class="rating__label" for="rating3-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+	                    <input class="rating__input" name="rating3" id="rating3-2" value="2" type="radio">
+	                    <label aria-label="3 stars" class="rating__label" for="rating3-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+	                    <input class="rating__input" name="rating3" id="rating3-3" value="3" type="radio">
+	                    <label aria-label="4 stars" class="rating__label" for="rating3-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+	                    <input class="rating__input" name="rating3" id="rating3-4" value="4" type="radio">
+	                    <label aria-label="5 stars" class="rating__label" for="rating3-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+	                    <input class="rating__input" name="rating3" id="rating3-5" value="5" type="radio">
+	                </div>
+	            </div>
+	            <div class="input-container review-success-hide">
+	                <label for="text-review" class="req"><?php pll_e('Your feedback'); ?></label>
+	                <textarea type="text" id="text-review" class="validate"></textarea>
+	            </div>
+	            <div class="btn btn-feedback review-success-hide"><span><?php pll_e('Leave feedback'); ?></span></div>
+	            
+	            <div class="form-review--success" style="display: none;">
+	            	<h4><?php pll_e('Thanks for your feedback! The review will appear after confirmation by the administrator.'); ?></h4>
+	            </div>
+
+	        </form>
+	        <div class="close-btn close">
+	            <div class="close-container">
+	                <div class="leftright"></div>
+	                <div class="rightleft"></div>
+	                <div class="text"><?php pll_e('close'); ?></div>
+	            </div>
+	        </div>
+	    </div>
+
 		<?php wp_footer(); ?>
 	</body>
 </html>

@@ -9,5 +9,4 @@
 		<?php wp_link_pages(); ?>
 		<?php comments_template(); ?>
 	</div>
-	<?php get_sidebar(); ?>
 <?php get_footer(); ?>

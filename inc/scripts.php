@@ -18,6 +18,7 @@ function base_scripts_styles() {
 	wp_enqueue_style( 'webflow', get_template_directory_uri() . '/css/webflow.css', array() );
 	wp_enqueue_style( 'headery', get_template_directory_uri() . '/css/headery.webflow.css', array() );
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/css/main.css', array() );
+	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
 
 	// Loads JavaScript file with functionality specific.
 	wp_enqueue_script( 'webfont-js', get_template_directory_uri() . '/js/webfont.js' );

@@ -10,3 +10,52 @@ Text Domain: prime
 Tags: one-column, two-columns
 Theme URI:
 */
+
+.popup-content .render-img{
+	width: 90px ;
+	height: 90px ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50% ;
+	margin: 0 auto;
+}
+
+.popup-content .photo{
+	margin-bottom: 25px;
+	display: none;
+}
+
+.popup-content .btn:hover{
+	cursor: pointer;
+}
+
+.popup-content .feedback-err{
+	border : 2px solid red;
+}
+
+.popup-content .feedback-err-star{
+	border-bottom : 2px solid red;
+}
+
+.popup-content .form-review--success{
+	text-align: center;
+    border: 2px solid green;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.popup-content .form-review--success h4{
+	margin: 0;
+}
+
+.woocommerce-cart #sidebar,
+.woocommerce-cart .title{
+	display: none;
+}
+
+.woocommerce .quantity .qty{
+	width: 4.631em;
+    text-align: center;
+    padding: 8px;
+}

@@ -189,37 +189,7 @@ get_header(); ?>
 
 						                        	<?php endforeach ; ?>
 						                        </select>
-
-					                            <!-- <div class="dropdown__wrapper js__dropdown">
-
-					                            	<?php foreach( $capacity_tax as $cur_term ) : ?>
-
-					                            		<?php if( $capacity_tax_counter == 1 ) : ?>
-
-							                                <div class="dropdown__header">
-							                                    <span class="dropdown__header-item"><?php echo $cur_term->name ; ?></span>
-							                                    <span class="arr"><i>▼</i></span>
-							                                </div>
-
-							                            <?php endif ; ?>
-							                            <?php $capacity_tax_counter++ ; ?>
-						                            <?php endforeach ; ?>
-
-						                            <ul style="display: none;" class="dropdown__dropdown">
-					                                    <div class="dropdown__dropdown-wrapper">
-
-					                            			<?php foreach( $capacity_tax as $cur_term ) : ?>
-
-						                                        <li class="dropdown__item">
-						                                        	<a class="dropdown__text"><?php echo $cur_term->name ; ?></a>
-						                                        </li>
-
-				                                			<?php endforeach ; ?>
-
-					                                    </div>
-						                            </ul>
-
-					                            </div> -->
+						                        
 					                        </div>
 					                    </div>
 					                <?php endif ; ?>
