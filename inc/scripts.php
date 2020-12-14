@@ -28,6 +28,7 @@ function base_scripts_styles() {
     wp_enqueue_script( 'udesly-shopify', get_template_directory_uri() . '/js/udesly-shopify.js', '', '', $in_footer );
     wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '', $in_footer );
     wp_enqueue_script( 'webflow-js', get_template_directory_uri() . '/js/webflow.js', '', '', $in_footer );
+    wp_enqueue_script( 'cookie-js', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js', '', '', $in_footer );
 
 	//ajax_filter js
     wp_register_script( 'custom-js', get_stylesheet_directory_uri() . '/js/custom-theme.js', array('jquery'), '', $in_footer );

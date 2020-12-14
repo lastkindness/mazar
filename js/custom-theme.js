@@ -1,5 +1,36 @@
 (function ($) {
 
+	checkCookie() ;
+
+	$('.switchbox').on('click', function(){
+		
+		$.removeCookie( "themecolor" ) ;
+
+		if( $('body').hasClass( "dark-theme" ) ) {
+			$.cookie("themecolor", "dark", { expires : 1, path : '/' });
+		}else{
+			$.cookie("themecolor", "light", { expires : 1, path : '/' });
+		}
+
+	})
+
+	function checkCookie() {
+
+		var themecolor = $.cookie("themecolor") ;
+
+		if( themecolor == "dark" && themecolor != "" ){
+
+			$('body').addClass('dark-theme') ;
+
+		}else{
+
+			$('body').addClass('light-theme') ; 
+
+		}
+	  
+	}
+
+
 	$('.product-holder').each(function(){
 
 		let $productItem = $(this) ;
