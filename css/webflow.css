@@ -53,6 +53,7 @@ body {
     font-size: 14px;
     line-height: 20px;
     color: #262625;
+    transition: all 0.3s ease-in-out;
 }
 img {
     max-width: 100%;
@@ -1595,6 +1596,19 @@ textarea.w-select {
     margin-left: auto;
     margin-right: auto;
 }
+
+@media screen and (max-width: 1200px) {
+    .w-nav-link {
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .w-nav-link {
+        padding: 5px 10px;
+    }
+}
+
 .w-nav-link.w--current {
     color: #0082f3;
 }

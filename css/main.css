@@ -84,7 +84,17 @@ img,
 .dropdown ol li:before {
     display: none; }
 .dropdown select {
-    outline: rgba(207, 198, 195, 0); }
+    padding: 10px;
+    border-radius: 6px;
+    outline: rgba(207, 198, 195, 0);
+    cursor: pointer;
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Butler ExtraBold', sans-serif !important;
+}
+.dropdown select option {
+    cursor: pointer;
+}
 .dropdown__text {
     color: #000;
     text-transform: uppercase;
@@ -207,7 +217,7 @@ img,
     color: rgba(40, 39, 39, 0.5); }
 .dropdown__dropdown {
     position: absolute;
-    top: 25px;
+    top: 45px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: none;
@@ -277,6 +287,7 @@ img,
 .dropdown_select .dropdown__wrapper {
     width: 100%; }
 .dropdown_select .dropdown__wrapper > span {
+    width: 100%;
     margin-right: 0; }
 .dropdown_select label {
     top: -webkit-calc(50% - 5px);
@@ -771,7 +782,6 @@ img,
     opacity: 1; }
 .popup {
     position: fixed;
-    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -782,6 +792,7 @@ img,
     display: none;
     z-index: 101;
     width: 570px;
+    top: 55%;
     height: auto;
     background-color: #FFFFFF;
     text-align: left;
@@ -1407,6 +1418,8 @@ textarea {
     border: 1px solid #CBCBCB;
     padding: 19px 23px;
     border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 input:hover,
@@ -1421,9 +1434,6 @@ textarea:focus {
     margin-top: 100px;
     width: 1200px;
     max-width: 100%;
-}
-.div-block-163 {
-    overflow: hidden;
 }
 #intro .add {
     width: 33px;
@@ -2256,3 +2266,147 @@ ul.tab_header {
     }
 }
 
+#mailpoet_form_1 form.mailpoet_form {
+    padding: 0 !important;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+#mailpoet_form_1 .mailpoet_paragraph {
+    margin: 0 !important;
+    width: calc(100% - 60px);
+}
+#mailpoet_form_1 .mailpoet_text,
+#mailpoet_form_1 .mailpoet_textarea {
+    padding: 20px !important;
+    margin: 0 auto 0 0 !important;
+    width: 100% !important;
+    border-radius: 6px 0 0 6px !important;
+}
+#mailpoet_form_1 .mailpoet_paragraph.last {
+    width: 60px;
+    height: auto;
+}
+#mailpoet_form_1 .mailpoet_submit {
+    padding: 5px;
+    margin: 0 auto 0 0;
+    border-color: transparent;
+    width: 60px;
+    height: 100%;
+    border-radius: 0 6px 6px 0;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+#mailpoet_form_1 .mailpoet_submit:active,
+#mailpoet_form_1 .mailpoet_submit:focus,
+#mailpoet_form_1 .mailpoet_submit:hover {
+    background-color: #787E8E;
+    border-color: #787E8E;
+    transition: all 0.5s ease-in-out;
+}
+#mailpoet_form_1 .mailpoet_paragraph {
+    margin: 0;
+}
+#mailpoet_form_1 .mailpoet_message {
+    padding: 0 !important;
+}
+.woocommerce-page #content {
+    padding-top: 176px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.woocommerce-page #content .title,
+.woocommerce-page #content .title>* {
+    font-size: 64px;
+    line-height: 1.2em;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.woocommerce-checkout .col-1,
+.woocommerce-checkout .col-2,
+.woocommerce-checkout .col-3,
+.woocommerce-checkout .col-4 {
+    width: 100% !important;
+    float: unset !important;
+    margin-bottom: 50px !important;
+}
+
+.woocommerce-checkout h3 {
+    margin-bottom: 20px;
+}
+
+.woocommerce-checkout .col-1 .woocommerce-billing-fields__field-wrapper {
+    column-count: 2;
+}
+
+.woocommerce-checkout .col-1 .woocommerce-billing-fields__field-wrapper:before {
+    content: 'fields marked with * are required';
+    color: #CBCBCB;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: left;
+    display: block;
+}
+
+.woocommerce-checkout .select2-container .select2-selection--single {
+    padding: 19px 23px;
+    height: auto;
+}
+.woocommerce-checkout  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.select2-search--dropdown,
+.select2-results__option {
+    padding: 4px 30px;
+}
+
+.woocommerce-checkout .shop_table th {
+    font-size: 20px;
+}
+
+.woocommerce-checkout .shop_table .order-total td {
+    color: red;
+}
+
+.woocommerce #payment #place_order,
+.woocommerce-page #payment #place_order,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    margin-left: 0px;
+    border-radius: 4px;
+    background-color: #fddc37;
+    font-family: Butler, sans-serif;
+    color: #000;
+    padding: 20px 25px !important;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    border: 0;
+    display: inline-block;
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+}
+
+.woocommerce #payment #place_order:hover,
+.woocommerce #payment #place_order:active,
+.woocommerce #payment #place_order:focus,
+.woocommerce-page #payment #place_order:hover,
+.woocommerce-page #payment #place_order:active,
+.woocommerce-page #payment #place_order:focus,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce #respond input#submit.alt:active,
+.woocommerce #respond input#submit.alt:focus,
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt:hover,
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt:active,
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt:focus {
+    transition: all 0.3s ease-in-out;
+    opacity: 0.7;
+}
+
+.woocommerce-page #billing_city_field {
+    padding-top: 95px;
+}

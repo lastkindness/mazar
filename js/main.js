@@ -646,4 +646,25 @@
     }
     //select2 click
 
+    //select2 click
+    if ($("#select").length) {
+        $("#select").select2({
+            placeholder: 'General Issues/Queries'
+        });
+    }
+    //select2 click
+
+    //FAQ close open
+    $('.faq-question-wrap').click(function () {
+        $(this).closest('.faq-wrap').toggleClass("active");
+        $(this).siblings('.faq-answer').slideToggle();
+    });
+    //FAQ close open
+
+    //switch light dark theme
+    $('.light-dark-theme-switch .switchbox').click(function () {
+        console.log(this);
+        $('body').toggleClass("dark-theme");
+    });
+    //switch light dark theme
 })(jQuery);

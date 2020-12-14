@@ -3,7 +3,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
-	    
+
 	    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico" type="image/png">
    		<link href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.png" rel="apple-touch-icon">
 
@@ -21,7 +21,7 @@
 
 	</head>
 
-	<?php  
+	<?php
 
 		if( basename( get_page_template() ) == 'template-home.php' ){
 			$custom_body_class = 'main-page' ;
@@ -101,7 +101,7 @@
 		        <img src="<?php echo get_template_directory_uri(); ?>/img/menu.png" width="50" alt="" class="icon">
 		    </div>
 
-		    <?php  
+		    <?php
 
 		    	$header_image = get_field('header_image',pll_current_language('slug')) ;
 
@@ -117,41 +117,45 @@
 
 		    	<?php if( have_rows('header_menu',pll_current_language('slug')) ): ?>
 
-		    		<?php while( have_rows('header_menu',pll_current_language('slug')) ) : the_row(); ?>
+                    <div class="nav-menu-wrap">
 
-		    			<?php  
+                        <?php while( have_rows('header_menu',pll_current_language('slug')) ) : the_row(); ?>
 
-		    				$link = get_sub_field('link') ;
+                            <?php
 
-		    				if( $link ){
-		    					$link_url = $link['url'];
-							    $link_title = $link['title'];
-							    $link_target = $link['target'] ? $link['target'] : '_self';
-		    				}
+                                $link = get_sub_field('link') ;
 
-		    			?>
+                                if( $link ){
+                                    $link_url = $link['url'];
+                                    $link_title = $link['title'];
+                                    $link_target = $link['target'] ? $link['target'] : '_self';
+                                }
 
-		    			<?php if( $link_url && $link_title && $link ) : ?>
+                            ?>
 
-					        <a href="<?php echo $link_url ; ?>" class="nav-link w-nav-link" target="<?php echo $link_target ; ?>">
-					        	<?php echo $link_title ; ?>
-					        </a>
+                            <?php if( $link_url && $link_title && $link ) : ?>
 
-					    <?php endif ; ?>
+                                <a href="<?php echo $link_url ; ?>" class="nav-link w-nav-link" target="<?php echo $link_target ; ?>">
+                                    <?php echo $link_title ; ?>
+                                </a>
 
-				    <?php endwhile ; ?>
+                            <?php endif ; ?>
+
+                        <?php endwhile ; ?>
+
+                    </div>
 
 			    <?php endif ; ?>
 
 			    <?php if ( function_exists( 'pll_the_languages' ) ) : ?>
 
-			    	<?php  
+			    	<?php
 
 			    		$languages = pll_the_languages( array(
 						    'display_names_as'       => 'slug',
 						    'hide_if_no_translation' => 1,
 						    'raw'                    => true
-						)); 
+						));
 
 			    	?>
 
@@ -171,7 +175,7 @@
 
 				                    	<?php foreach ( $languages as $language ) : ?>
 
-				                    		<?php  
+				                    		<?php
 
 				                    			$id             = $language['id'];
 											    $slug           = $language['slug'];

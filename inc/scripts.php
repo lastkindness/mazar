@@ -11,7 +11,7 @@ function base_scripts_styles() {
 
 	// Loads our main stylesheet.
 	wp_enqueue_style( 'base-style', get_stylesheet_uri(), array() );
-	
+
 	// Implementation stylesheet.
 	wp_enqueue_style( 'base-theme', get_template_directory_uri() . '/theme.css', array() );
 	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', array() );
@@ -20,11 +20,14 @@ function base_scripts_styles() {
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/css/main.css', array() );
 	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
 
-	// Loads JavaScript file with functionality specific.
-	wp_enqueue_script( 'webfont-js', get_template_directory_uri() . '/js/webfont.js' );
-	wp_enqueue_script( 'webflow-js', get_template_directory_uri() . '/js/webflow.js', '', '', $in_footer );
-	wp_enqueue_script( 'udesly-shopify', get_template_directory_uri() . '/js/udesly-shopify.js', '', '', $in_footer );
-	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '', $in_footer );
+
+    // Loads JavaScript file with functionality specific.
+    wp_enqueue_script( 'jquery3-4-1', get_template_directory_uri() . '/js/jquery-3.4.1.min.js', '', '', $in_footer );
+    wp_enqueue_script( 'webfont-js', get_template_directory_uri() . '/js/webfont.js' );
+    wp_enqueue_script( 'webflow-js', get_template_directory_uri() . '/js/webflow.js', '', '', $in_footer );
+    wp_enqueue_script( 'udesly-shopify', get_template_directory_uri() . '/js/udesly-shopify.js', '', '', $in_footer );
+    wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '', $in_footer );
+    wp_enqueue_script( 'webflow-js', get_template_directory_uri() . '/js/webflow.js', '', '', $in_footer );
 
 	//ajax_filter js
     wp_register_script( 'custom-js', get_stylesheet_directory_uri() . '/js/custom-theme.js', array('jquery'), '', $in_footer );

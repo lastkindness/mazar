@@ -6,7 +6,7 @@ get_header(); ?>
 
 	<?php while ( have_posts( ) ) : the_post(); ?>
 
-		<?php  
+		<?php
 
 			$hs_image = get_field('hs_image') ;
 			$hs_title = get_field('hs_title') ;
@@ -40,7 +40,7 @@ get_header(); ?>
 
 		<?php endif ; ?>
 
-		<?php  
+		<?php
 
 			$ts_title = get_field('ts_title') ;
 			$ts_text = get_field('ts_text') ;
@@ -72,7 +72,7 @@ get_header(); ?>
 
 				                <?php while( have_rows('iid_dots') ) : the_row(); ?>
 
-				                	<?php  
+				                	<?php
 
 				                		$title = get_sub_field('title') ;
 				                		$left = get_sub_field('left') ;
@@ -91,7 +91,7 @@ get_header(); ?>
 					                </div>
 
 					            <?php endwhile ; ?>
-				               
+
 				            </div>
 
 				        <?php endif ; ?>
@@ -105,7 +105,7 @@ get_header(); ?>
 
 			<?php while( have_rows('ps_items') ) : the_row(); ?>
 
-				<?php  
+				<?php
 
 					$title = get_sub_field('title') ;
 					$product = get_sub_field('product') ;
@@ -124,7 +124,7 @@ get_header(); ?>
 						$block_class = 'sticky-top' ;
 						$block_bg = 'show-bg-3' ;
 						$block_img_width = '595px' ;
-						
+
 					}else{
 
 						$block_id = 'griff' ;
@@ -151,7 +151,7 @@ get_header(); ?>
 					                <?php endif ; ?>
 
 					                <?php if( get_the_post_thumbnail_url( $product, 'full' ) ) : ?>
-   
+
 					                    <img width="<?php echo $block_img_width ; ?>" data-image-id="<?php echo $product ; ?>" height="auto" src="<?php echo get_the_post_thumbnail_url( $product, 'full' ) ; ?>" alt="cbd oil for anxiety by Headery" class="cord image2 product-image">
 
 					                <?php endif ; ?>
@@ -168,7 +168,7 @@ get_header(); ?>
 
 				                    <p class="paragraph-45"><?php echo $product_content ; ?></p>
 
-				                    <?php  
+				                    <?php
 
 				                    	$capacity_tax = get_the_terms( $product, 'pa_capacity' );
 
@@ -189,12 +189,12 @@ get_header(); ?>
 
 						                        	<?php endforeach ; ?>
 						                        </select>
-						                        
+
 					                        </div>
 					                    </div>
 					                <?php endif ; ?>
 
-				                    <?php  
+				                    <?php
 
 				                    	$flavour_tax = get_the_terms( $product, 'pa_flavour' );
 
@@ -218,7 +218,7 @@ get_header(); ?>
 
 						                        <?php $flavour_tax_counter++ ; ?>
 						                    <?php endforeach ; ?>
-					                        
+
 					                    </div>
 
 					                <?php endif ; ?>
@@ -262,7 +262,7 @@ get_header(); ?>
 
 		<?php endif ; ?>
 
-		<?php  
+		<?php
 
 			$faq_title = get_field('faq_title') ;
 			$faq_text = get_field('faq_text') ;
@@ -273,26 +273,20 @@ get_header(); ?>
 
 			<div id="FAQ" class="section faq-section">
 	    		<div class="page-container faq-cointainer">
-
 	    			<?php if( $faq_title ) : ?>
-
 		    			<a data-w-id="1cedd390-880b-31ba-ed79-091268990acd" href="#" class="faq-question-wrap w-inline-block">
 				            <h3 class="faq-question"><?php echo $faq_title ; ?></h3>
 				        </a>
-
 				    <?php endif ; ?>
-
 				    <?php if( $faq_text ) : ?>
-
         				<div class="faq-answer"><?php echo $faq_text ; ?></div>
-
         			<?php endif ; ?>
 
         			<?php if( have_rows('faq_items') ) : ?>
 
 						<?php while( have_rows('faq_items') ) : the_row(); ?>
 
-							<?php  
+							<?php
 
 								$title = get_sub_field('title') ;
 								$text = get_sub_field('text') ;
@@ -302,11 +296,12 @@ get_header(); ?>
 							<?php if( $text && $title ) : ?>
 
 								<div class="faq-wrap">
-						            <a data-w-id="82cdd169-f24a-3303-cc55-106d2d03cdd1" href="#" class="faq-question-wrap w-inline-block">
+						            <a href="#" class="faq-question-wrap w-inline-block">
 						                <h3 class="faq-question"><strong><?php echo $title ; ?></strong></h3>
 						            </a>
-						            <div style="display:none;-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
-						               class="faq-answer"><?php echo $text ; ?></div>
+						            <div style="display:none;" class="faq-answer">
+                                        <?php echo $text ; ?>
+                                    </div>
 						        </div>
 
 							<?php endif ; ?>
