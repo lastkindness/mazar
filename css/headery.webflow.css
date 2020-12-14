@@ -7073,6 +7073,17 @@ html.w-mod-js *[data-ix="fade-in-on-load"] {
     }
 }
 
+body.dark-theme .bkg0,
+body.dark-theme .bkg1,
+body.dark-theme .bkg2,
+body.dark-theme .bkg3,
+body.dark-theme .bkg4,
+body.dark-theme .bkg5 {
+    background-color: rgb(0, 2, 8) !important;
+    background-image: unset;
+    transition: all 0.3s ease-in-out;
+}
+
 @font-face {
     font-family: 'Modern';
     src: url('../fonts/Modern-Regular.ttf') format('truetype');
