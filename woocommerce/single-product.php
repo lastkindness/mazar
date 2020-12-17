@@ -288,6 +288,7 @@ get_header(); ?>
 			        			$image = get_sub_field('image') ;
 			        			$name = get_sub_field('name') ;
 			        			$text = get_sub_field('text') ;
+			        			$country = get_sub_field('country') ;
 			        			$score = get_sub_field('score') ;
 			        			$approved = get_sub_field('approved') ;
 
@@ -328,7 +329,11 @@ get_header(); ?>
 					                    </ul>
 					                    <div class="title">
 					                        <h6><?php echo $name ; ?></h6>
-                                            <span class="flag-icon flag-icon-br"></span>
+
+					                        <?php if( $country ) : ?>
+                                            	<span class="flag-icon <?php echo $country ; ?>"></span>
+                                            <?php endif ; ?>
+
 					                    </div>
 					                    <div class="text">
 					                        <p><?php echo $text ; ?></p>

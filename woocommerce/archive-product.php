@@ -72,12 +72,13 @@ get_header();
                             </a>
                             <div class="div-block-111"></div>
                         </div>
-                    </div>
 
                     <?php endwhile ;
                     }
 
                     }?>
+                    
+                    </div>
 
                 </div>
             </div>

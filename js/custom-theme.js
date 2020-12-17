@@ -222,6 +222,7 @@
 	$('.btn-feedback').on('click', function(){
 
 		let name = $('.popup-content #name-review').val() ;
+		let country = $('.popup-content #name-country').val() ;
 		let score = $('.popup-content input[name=rating3]:checked').val() ;
 		let text = $('.popup-content #text-review').val() ;
 		let prodId = $('.product-holder').attr('data-prod-id') ;
@@ -255,7 +256,8 @@
 
     		fd.append( "action", 'setreview'); 
     		fd.append( "security", filter_params.ajax_nonce); 
-    		fd.append( "name", name); 
+    		fd.append( "name", name);
+    		fd.append( "country", country);
     		fd.append( "score", score); 
     		fd.append( "text", text); 
     		fd.append( "prod_id", prodId); 
@@ -280,8 +282,6 @@
 			});
 
 		}
-
-
 
 	});
 

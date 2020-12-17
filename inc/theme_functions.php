@@ -206,6 +206,7 @@ function set_review(){
       $value = array(
           'name'   => $_POST['name'],
           'text'  => $_POST['text'],
+          'country'  => $_POST['country'],
           'score'  => $_POST['score'],
           'approved'  => false,
       );
