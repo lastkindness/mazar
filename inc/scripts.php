@@ -19,8 +19,9 @@ function base_scripts_styles() {
 	wp_enqueue_style( 'headery', get_template_directory_uri() . '/css/headery.webflow.css', array() );
     wp_enqueue_style( 'select2-min', get_template_directory_uri() . '/css/select2.min.css', array() );
     wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
-    wp_enqueue_style( 'icon-flags', get_template_directory_uri() . '/css/flag-icon.min.css', array() );
-	wp_enqueue_style( 'main', get_template_directory_uri() . '/css/main.css', array() );
+    //wp_enqueue_style( 'icon-flags', get_template_directory_uri() . '/css/flag-icon.min.css', array() );
+    wp_enqueue_style( 'icon-flags', 'https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css' );
+    wp_enqueue_style( 'main', get_template_directory_uri() . '/css/main.css', array() );
 
     // Loads JavaScript file with functionality specific.
     wp_enqueue_script( 'jquery3-4-1', get_template_directory_uri() . '/js/jquery-3.4.1.min.js', '', '', $in_footer );
