@@ -667,4 +667,17 @@
         $('body').toggleClass("dark-theme");
     });
     //switch light dark theme
+    //select2 start
+    if ($("select").length) {
+        setTimeout(function () {
+            $("select").each(function (index, item) {
+                var text = $(item).data("placeholder");
+                console.log(text);
+                $(item).select2({
+                    placeholder: text
+                });
+            });
+        }, 100);
+    }
+    //select2 end
 })(jQuery);

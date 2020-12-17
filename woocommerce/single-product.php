@@ -328,6 +328,7 @@ get_header(); ?>
 					                    </ul>
 					                    <div class="title">
 					                        <h6><?php echo $name ; ?></h6>
+                                            <span class="flag-icon flag-icon-br"></span>
 					                    </div>
 					                    <div class="text">
 					                        <p><?php echo $text ; ?></p>

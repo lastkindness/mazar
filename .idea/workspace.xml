@@ -4,6 +4,12 @@
     <list default="true" id="c5c1fb73-4d86-4a46-97b7-353e04d58b4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/headery.webflow.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/headery.webflow.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/scripts.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/scripts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/woocommerce/archive-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/woocommerce/archive-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/woocommerce/single-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/woocommerce/single-product.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,101 +21,98 @@
     <session id="375688676">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="8" />
-          <entry key="js" value="3" />
-          <entry key="php" value="18" />
+          <entry key="css" value="13" />
+          <entry key="js" value="4" />
+          <entry key="php" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="8" />
-          <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="18" />
+          <entry key="CSS" value="13" />
+          <entry key="JavaScript" value="4" />
+          <entry key="PHP" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1160" />
-          <entry key="js" value="60" />
-          <entry key="php" value="135" />
+          <entry key="css" value="2191" />
+          <entry key="js" value="61" />
+          <entry key="php" value="542" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1160" />
-          <entry key="JavaScript" value="60" />
-          <entry key="PHP" value="135" />
+          <entry key="CSS" value="2191" />
+          <entry key="JavaScript" value="61" />
+          <entry key="PHP" value="542" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
-              <caret line="2410" column="19" selection-start-line="2410" selection-start-column="19" selection-end-line="2410" selection-end-column="19" />
+            <state relative-caret-position="702">
+              <caret line="2401" column="1" lean-forward="true" selection-start-line="2401" selection-start-column="1" selection-end-line="2401" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inc/scripts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/template-home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="255" column="32" selection-start-line="255" selection-start-column="28" selection-end-line="255" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/webflow.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="1607" column="18" selection-start-line="1607" selection-start-column="18" selection-end-line="1607" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/headery.webflow.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
-              <caret line="7083" column="36" selection-start-line="7083" selection-start-column="36" selection-end-line="7083" selection-end-column="36" />
+            <state relative-caret-position="307">
+              <caret line="5816" column="25" selection-start-line="5816" selection-start-column="25" selection-end-line="5816" selection-end-column="25" />
               <folding>
-                <marker date="1607949584241" expanded="true" signature="119793:119840" ph="..." />
+                <marker date="1608166210011" expanded="true" signature="120253:120300" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header.php">
+        <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="144" selection-start-line="144" selection-end-line="144" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="614">
+              <caret line="679" column="16" lean-forward="true" selection-start-line="679" selection-start-column="16" selection-end-line="679" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/woocommerce/archive-product.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/woocommerce/single-product.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="311" column="37" selection-start-line="311" selection-start-column="37" selection-end-line="311" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="358" column="71" lean-forward="true" selection-start-line="358" selection-start-column="71" selection-end-line="358" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -118,23 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>section-9</find>
-      <find>collection-list</find>
-      <find>post-wrapper</find>
-      <find>product-advantages</find>
-      <find>nav-link w-nav-link</find>
-      <find>section-11</find>
-      <find>.nav-link</find>
-      <find>.pop</find>
-      <find>#mailpoet_form_1 form.mailpoet_form</find>
-      <find>nav-menu w-nav-menu</find>
-      <find>.brand</find>
-      <find>margin-bottom: 88px;</find>
-      <find>.section-23.first</find>
-      <find>.faq-question-wrap</find>
-      <find>.faq-answer</find>
-      <find>.dropdown select</find>
-      <find>.d-66-icon-wrapper</find>
       <find>.d-66-cart-icon</find>
       <find>dark-</find>
       <find>#mailpoet_form_1 .mailpoet_paragraph.last</find>
@@ -142,12 +128,29 @@
       <find>.cart-actions</find>
       <find>width: 60px;</find>
       <find>.section-11</find>
-      <find>.switch-section</find>
       <find>.div-block-163</find>
       <find>.w-nav-link</find>
       <find>padding-top: 80px;</find>
       <find>textarea</find>
       <find>.bkg0</find>
+      <find>@</find>
+      <find>.woocommerce-page #content</find>
+      <find>.woocommerce-page #content .title&gt;*</find>
+      <find>height: 64px;</find>
+      <find>.switch-section</find>
+      <find>margin-top: -3vh;</find>
+      <find>.woocommerce-checkout .col-1 .woocommerce-billing-fields__field-wrapper</find>
+      <find>.dark-theme</find>
+      <find>&lt;a</find>
+      <find>star-list</find>
+      <find>btn btn--load-photo</find>
+      <find>reviews__item-content</find>
+      <find>href=&quot;</find>
+      <find>product-wrapper</find>
+      <find>height: 250px;</find>
+      <find>height: 235px;</find>
+      <find>.product-information__text</find>
+      <find>.wrapper.content</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,21 +161,22 @@
       <list>
         <option value="$PROJECT_DIR$/js/webflow.js" />
         <option value="$PROJECT_DIR$/pages/template-home.php" />
-        <option value="$PROJECT_DIR$/inc/scripts.php" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/pages/template-story.php" />
         <option value="$PROJECT_DIR$/pages/template-contact.php" />
         <option value="$PROJECT_DIR$/woocommerce/cart/cart.php" />
         <option value="$PROJECT_DIR$/pages/template-learn.php" />
         <option value="$PROJECT_DIR$/pages/template-partners.php" />
         <option value="$PROJECT_DIR$/single.php" />
-        <option value="$PROJECT_DIR$/woocommerce/archive-product.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/woocommerce/single-product.php" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/css/webflow.css" />
-        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/woocommerce/single-product.php" />
+        <option value="$PROJECT_DIR$/woocommerce/archive-product.php" />
+        <option value="$PROJECT_DIR$/inc/scripts.php" />
+        <option value="$PROJECT_DIR$/footer.php" />
+        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/css/headery.webflow.css" />
+        <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
   </component>
@@ -182,10 +186,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-57" />
+    <option name="y" value="10" />
+    <option name="width" value="1489" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
@@ -215,11 +219,6 @@
               <item name="primetheme" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="primetheme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="primetheme" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -230,7 +229,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/OpenServer/domains/mazar.loc/wp-content/themes/primetheme/css/webflow.css" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../generali.loc/wp-content/themes/generali-1520" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -257,18 +256,21 @@
       <option name="presentableId" value="Default" />
       <updated>1607619949898</updated>
       <workItem from="1607619951257" duration="608000" />
-      <workItem from="1607782951522" duration="25221000" />
+      <workItem from="1607782951522" duration="25925000" />
+      <workItem from="1608076430426" duration="7350000" />
+      <workItem from="1608124085702" duration="5174000" />
+      <workItem from="1608156986476" duration="10535000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25829000" />
+    <option name="totallyTimeSpent" value="49592000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20948827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -300,9 +302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="677">
           <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -310,12 +309,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="822">
           <caret line="108" selection-start-line="108" selection-end-line="108" />
-          <folding>
-            <element signature="e#491#1156#0#HTML" />
-            <element signature="e#1387#1896#0#HTML" />
-            <element signature="n#div#2;n#main#0;n#!!top" />
-            <element signature="e#1979#3623#0#HTML" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -323,9 +316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="569">
           <caret line="55" column="14" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="55" selection-end-column="14" />
-          <folding>
-            <element signature="n#div#1;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -333,11 +323,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
           <caret line="128" column="8" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="8" />
-          <folding>
-            <element signature="e#455#3414#0#HTML" />
-            <element signature="e#1593#3369#0#HTML" />
-            <element signature="e#3424#8271#0#HTML" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -345,10 +330,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="156" column="18" lean-forward="true" selection-start-line="123" selection-start-column="12" selection-end-line="156" selection-end-column="18" />
-          <folding>
-            <element signature="e#1225#3291#0#HTML" />
-            <element signature="e#3334#8181#0#HTML" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -356,9 +337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="47" column="14" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="47" selection-end-column="14" />
-          <folding>
-            <element signature="n#div#1;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -366,42 +344,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="92" column="10" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
-          <folding>
-            <element signature="e#261#2019#0#HTML" />
-            <element signature="e#2042#7017#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/woocommerce/archive-product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="90" selection-start-line="90" selection-end-line="123" selection-end-column="6" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#1;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/woocommerce/single-product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="222" column="24" lean-forward="true" selection-start-line="222" selection-start-column="24" selection-end-line="222" selection-end-column="24" />
-          <folding>
-            <element signature="e#309#4794#0#HTML" />
-            <element signature="e#4911#6441#0#HTML" />
-            <element signature="e#6819#7648#0#HTML" />
-            <element signature="e#7672#11077#0#HTML" />
-            <element signature="e#11103#15822#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="663" column="29" lean-forward="true" selection-start-line="663" selection-start-column="29" selection-end-line="663" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -409,59 +351,93 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="222" column="10" lean-forward="true" selection-start-line="189" selection-start-column="4" selection-end-line="222" selection-end-column="10" />
-          <folding>
-            <element signature="e#51#8823#0#HTML" />
-            <element signature="e#8828#13803#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/webflow.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="1607" column="18" selection-start-line="1607" selection-start-column="18" selection-end-line="1607" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="2410" column="19" selection-start-line="2410" selection-start-column="19" selection-end-line="2410" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/scripts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/template-home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
+        <state relative-caret-position="6630">
           <caret line="255" column="32" selection-start-line="255" selection-start-column="28" selection-end-line="255" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/webflow.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41782">
+          <caret line="1607" column="18" selection-start-line="1607" selection-start-column="18" selection-end-line="1607" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3744">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/flag-icon.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/scripts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="679" column="16" lean-forward="true" selection-start-line="679" selection-start-column="16" selection-end-line="679" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/woocommerce/archive-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/woocommerce/single-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="311" column="37" selection-start-line="311" selection-start-column="37" selection-end-line="311" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="358" column="71" lean-forward="true" selection-start-line="358" selection-start-column="71" selection-end-line="358" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/headery.webflow.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="7083" column="36" selection-start-line="7083" selection-start-column="36" selection-end-line="7083" selection-end-column="36" />
+        <state relative-caret-position="307">
+          <caret line="5816" column="25" selection-start-line="5816" selection-start-column="25" selection-end-line="5816" selection-end-column="25" />
           <folding>
-            <marker date="1607949584241" expanded="true" signature="119793:119840" ph="..." />
+            <marker date="1608166210011" expanded="true" signature="120253:120300" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="2401" column="1" lean-forward="true" selection-start-line="2401" selection-start-column="1" selection-end-line="2401" selection-end-column="1" />
         </state>
       </provider>
     </entry>

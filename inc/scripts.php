@@ -17,17 +17,18 @@ function base_scripts_styles() {
 	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', array() );
 	wp_enqueue_style( 'webflow', get_template_directory_uri() . '/css/webflow.css', array() );
 	wp_enqueue_style( 'headery', get_template_directory_uri() . '/css/headery.webflow.css', array() );
+    wp_enqueue_style( 'select2-min', get_template_directory_uri() . '/css/select2.min.css', array() );
+    wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
+    wp_enqueue_style( 'icon-flags', get_template_directory_uri() . '/css/flag-icon.min.css', array() );
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/css/main.css', array() );
-	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
-
 
     // Loads JavaScript file with functionality specific.
     wp_enqueue_script( 'jquery3-4-1', get_template_directory_uri() . '/js/jquery-3.4.1.min.js', '', '', $in_footer );
+    wp_enqueue_script( 'select2-min', get_template_directory_uri() . '/js/select2.min.js', '', '', $in_footer );
     wp_enqueue_script( 'webfont-js', get_template_directory_uri() . '/js/webfont.js' );
     wp_enqueue_script( 'webflow-js', get_template_directory_uri() . '/js/webflow.js', '', '', $in_footer );
     wp_enqueue_script( 'udesly-shopify', get_template_directory_uri() . '/js/udesly-shopify.js', '', '', $in_footer );
     wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '', $in_footer );
-    wp_enqueue_script( 'webflow-js', get_template_directory_uri() . '/js/webflow.js', '', '', $in_footer );
     wp_enqueue_script( 'cookie-js', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js', '', '', $in_footer );
 
 	//ajax_filter js

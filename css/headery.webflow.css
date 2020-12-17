@@ -5012,6 +5012,22 @@ body.dark-theme #mailpoet_form_1 .mailpoet_submit:hover {
     transition: all 0.5s ease-in-out;
 }
 
+body.dark-theme .faq-wrap p,
+body.dark-theme .faq-wrap h1,
+body.dark-theme .faq-wrap h2,
+body.dark-theme .faq-wrap h3,
+body.dark-theme .faq-wrap h4,
+body.dark-theme .faq-wrap h5,
+body.dark-theme .faq-wrap h6,
+body.dark-theme .faq-wrap div,
+body.dark-theme .faq-wrap span,
+body.dark-theme .faq-wrap strong,
+body.dark-theme .faq-wrap li,
+body.dark-theme .faq-wrap label,
+body.dark-theme .faq-question strong {
+    color: #202020 !important;
+}
+
 .dark-theme .sundial {
     transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(36DEG) skew(0, 0);
     transition: all 0.3s ease-in-out;
@@ -5024,10 +5040,11 @@ body.dark-theme #mailpoet_form_1 .mailpoet_submit:hover {
 
 .switch-section {
     position: relative;
-    margin-top: -10vh;
+    margin-top: 0;
     padding-top: 12vh;
     padding-bottom: 12vh;
     background-color: transparent;
+    overflow: hidden;
 }
 
 .who-should-grab-h-wrap {
@@ -5797,7 +5814,7 @@ html.w-mod-js *[data-ix="fade-in-on-load"] {
         display: none;
     }
     .wrapper.content {
-        margin-top: 0;
+        margin-top: 130px;
     }
     .section-23,
     .section-23.intro {
@@ -5848,6 +5865,7 @@ html.w-mod-js *[data-ix="fade-in-on-load"] {
         height: 64px;
         padding-right: 20px;
         padding-left: 20px;
+        top: 0;
     }
     .cart-button {
         margin-right: 19px;
@@ -6477,6 +6495,7 @@ html.w-mod-js *[data-ix="fade-in-on-load"] {
         -webkit-transform: scale(0.7);
         -ms-transform: scale(0.7);
         transform: scale(0.7);
+        overflow: hidden;
     }
     .image-36 {
         bottom: -143px;
@@ -6566,6 +6585,11 @@ html.w-mod-js *[data-ix="fade-in-on-load"] {
     }
     .product-information .product-information__img {
         height: 235px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .product-information__text {
+        width: 100%;
     }
     .popup-overlay .popup {
         height: calc(100vh - 65px);
